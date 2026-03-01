@@ -2,13 +2,23 @@
 
 This repository showcases an end-to-end machine learning workflow for predicting ordinal job satisfaction levels from large-scale developer survey data. The main artifact is the notebook:
 
-- `job_satisfaction_ordinal_modeling_github.ipynb`
+- `job_satisfaction_ordinal_modeling.ipynb`
 
 The notebook is structured to be readable on GitHub and demonstrates the full lifecycle from raw tabular data preparation to model evaluation and interpretation.
 
 ## Project Goal
 
 Build an ordinal classification pipeline to predict `JobSat` (0-10 scale) using demographic, career, workplace, and AI-adoption related features.
+
+## Dataset
+
+Due to repository size restrictions, the complete original survey files are not stored in this project.
+
+The full dataset (Stack Overflow Developer Survey 2025) can be downloaded from the official source:
+- https://survey.stackoverflow.co/2025/
+
+For this notebook, the raw survey data was preprocessed in advance and saved as:
+- `processed_data.csv`
 
 ## What the Notebook Covers
 
@@ -57,11 +67,22 @@ This notebook demonstrates practical handling of real-world survey data issues:
 - scikit-learn
 - seaborn, matplotlib
 
+## Requirements
+
+Install dependencies listed in:
+- `requirements.txt`
+
+Example:
+```bash
+pip install -r requirements.txt
+```
+
 ## How to Run
 
 1. Place the notebook in a folder with the required CSV data files.
-2. Open `job_satisfaction_ordinal_modeling_github.ipynb` in Jupyter Notebook/Lab.
-3. Run cells top-to-bottom.
+2. Install dependencies from `requirements.txt`.
+3. Open `job_satisfaction_ordinal_modeling.ipynb` in Jupyter Notebook/Lab.
+4. Run cells top-to-bottom.
 
 Notes:
 - The notebook is intentionally output-cleaned for GitHub readability.
